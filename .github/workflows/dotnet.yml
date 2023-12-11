@@ -22,7 +22,6 @@ jobs:
         dotnet-version: 8.0.x
     - name: Install dependencies
       run: dotnet restore
-      working-directory: SeleniumCSharpNetCore-main/SeleniumCSharpNetCore-main/
     - name: Build
       run: dotnet build --no-restore
     - name: Test
