@@ -22,7 +22,7 @@ namespace SeleniumCSharpNetCore.Utilities.ResuableControls
         public string GetExecSetting(string key)
         {
             // Load the JSON file into a JObject
-            _appSettings = JObject.Parse(File.ReadAllText(getPathBeforeBin("execSettings.json", "Utilities\\Properties")));
+            _appSettings = JObject.Parse(File.ReadAllText(getPathBeforeBin("execSettings.json", "Utilities//Properties")));
             // Retrieve the value for the given key
             return _appSettings[key]?.ToString();
         }
