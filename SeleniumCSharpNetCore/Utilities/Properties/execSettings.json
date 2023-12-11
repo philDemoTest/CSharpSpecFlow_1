@@ -1,5 +1,5 @@
 ﻿{
-    "browser": "gridChrome",
+    "browser": "chrome",
     "url": "http://eaapp.somee.com/",
     "gridUrl": "http://localhost:4444/",
     "LogLevel": "Info"
