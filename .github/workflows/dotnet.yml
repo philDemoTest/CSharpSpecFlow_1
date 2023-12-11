@@ -19,9 +19,10 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
-        dotnet-version: 6.0.x
-    - name: Restore dependencies
+        dotnet-version: 8.0.x
+    - name: Install dependencies
       run: dotnet restore
+      working-directory: SeleniumCSharpNetCore-main/SeleniumCSharpNetCore-main/
     - name: Build
       run: dotnet build --no-restore
     - name: Test
