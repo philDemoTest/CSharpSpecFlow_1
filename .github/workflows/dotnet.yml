@@ -25,5 +25,6 @@ jobs:
       working-directory: SeleniumCSharpNetCore/
     - name: Build
       run: dotnet build --no-restore
+      working-directory: SeleniumCSharpNetCore/
     - name: Test
       run: dotnet test --no-build --verbosity normal
